@@ -1,0 +1,30 @@
+.ticket-list-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.status-pending { color: orange; }
+.status-in-progress { color: blue; }
+.status-resolved { color: green; }
+.status-closed { color: gray; }
+
+.priority-low { color: green; }
+.priority-medium { color: orange; }
+.priority-high { color: red; }
+.priority-urgent { color: darkred; }

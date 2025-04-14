@@ -1,0 +1,31 @@
+<p>ticket-list works!</p>
+
+<div class="ticket-list-container">
+    <h2>Raised Tickets</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Issue</th>
+          <th>Status</th>
+          <th>Priority</th>
+          <th>Response Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ticket of tickets">
+          <td>{{ ticket.id }}</td>
+          <td>{{ ticket.issue }}</td>
+          <td>
+            <fa-icon [icon]="ticket.statusIcon" [ngClass]="ticket.statusClass"></fa-icon>
+            {{ ticket.status }}
+          </td>
+          <td>
+            <fa-icon [icon]="ticket.priorityIcon" [ngClass]="ticket.priorityClass"></fa-icon>
+            {{ ticket.priority }}
+          </td>
+          <td>{{ ticket.responseTime }} hrs</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
