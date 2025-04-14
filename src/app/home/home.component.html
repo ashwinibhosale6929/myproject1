@@ -1,0 +1,28 @@
+<p>home works!</p>
+
+<div class="container">
+  <p class="top-right"><a routerLink="/profile">Profile</a></p>
+</div>
+
+<div>
+  <p>Want a Ticket? <a routerLink="/ticket">Get Ticket</a></p>
+</div>
+
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span (click)="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Assign The Task</li>
+  <!--<li class="checked">Pay bills</li>-->
+  <li>Get the Task</li>
+  <li>Mark the working status of the project</li>
+  <li>Complete The Task</li>
+  <li>Inform The Issue holder</li>
+</ul>
+
+<app-ticket-list></app-ticket-list>
+
+<br><br>

@@ -1,0 +1,70 @@
+body{
+    background-color: #eee;
+}
+.container{
+    height: 70vh;
+}
+.card{
+    width: 600px;
+    border: none;
+    top: 10px;
+    left: 460px;
+    right: 0px;
+}
+
+.form-select:focus{
+    border-color: #8bbafe;
+    outline: 0;box-shadow: none;
+}
+.graphic{
+    background-color: blue;
+    border:1px solid blue;
+}
+.graphic:hover{
+    background-color: blue;
+    border:1px solid blue;
+}
+.code{
+    background-color: red;
+    border:1px solid red;
+}
+.code:hover{
+    background-color: red;
+    border:1px solid red;
+}
+.form-select{
+    width: 172px;
+}
+.team-button button{
+    font-size: 12px;
+    width: 250px;
+    height: 40px;
+}
+.team-projects span{
+    font-size: 12px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #d4d2d2;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.cu-user-profile-header .cu-user-profile-header__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-header{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px; 
+    box-sizing: inherit; 
+}
+.d-flex flex-row{
+    border-radius: 50%;
+    vertical-align: middle;
+}

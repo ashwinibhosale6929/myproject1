@@ -1,0 +1,37 @@
+<p>Login works!</p>
+
+<div class="login-container" style="align-content: center; margin: auto;">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button (click)="login()" type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+</div>
+
+<!--
+login() {
+    if (this.loginForm.valid) {
+      const loginData = this.loginForm.value;
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+      this.http
+        .post('https://appointfixuserphp.greatfive.in/login', loginData, { headers })
+        .subscribe(
+          (response: any) => {
+            console.log('Login successful:', response);
+            alert('Login Successful!');
+            this.loginForm.reset();
+            this.router.navigate(['/service']);
+          },
+          (error) => {
+            console.error('Login error:', error);
+            alert('Login failed. Please check your credentials.');
+          }
+        );
+    } else {
+      alert('Form is invalid');
+    }
+  }
+-->
